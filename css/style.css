@@ -52,6 +52,10 @@ table {
   border-spacing: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 10px;
 }
@@ -207,16 +211,93 @@ header video {
   }
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media screen and (min-width: 740px) {
+  .container {
+    max-width: 800px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 15px;
+}
+@media screen and (min-width: 740px) {
+  .row {
+    flex-direction: row;
+  }
+}
+
+.col {
+  width: 100%;
+  padding: 20px;
+}
+@media screen and (min-width: 760px) {
+  .col-md50 {
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 760px) {
+  .col-md33 {
+    flex: 0 0 33.333333%;
+  }
+}
+@media screen and (min-width: 760px) {
+  .col-md25 {
+    flex: 0 0 25%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .col-lg50 {
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .col-lg33 {
+    flex: 0 0 33.333333%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .col-lg25 {
+    flex: 0 0 25%;
+  }
+}
+
 section {
-  padding-top: 30px;
+  padding-top: 40px;
   height: 100vh;
+}
+section:nth-of-type(even) {
+  background-color: lightgrey;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
   color: #fff;
   text-shadow: 0 0 15px black;
+  padding-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 150%;
 }
 
 /*# sourceMappingURL=style.css.map */

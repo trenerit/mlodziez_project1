@@ -1,11 +1,26 @@
 section {
-    padding-top: 30px;
+    padding-top: 40px;
     height: 100vh;
+    
+    &:nth-of-type(even) {
+        background-color: lightgrey;
+    }
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     color: #fff;
     text-shadow: 0 0 15px black;
+    padding-bottom: 30px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 150%;
 }
