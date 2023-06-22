@@ -276,10 +276,13 @@ header video {
 
 section {
   padding-top: 40px;
-  height: 100vh;
+  min-height: 100vh;
 }
 section:nth-of-type(even) {
   background-color: lightgrey;
+}
+section:nth-of-type(2) {
+  text-align: center;
 }
 
 h2 {
@@ -298,6 +301,12 @@ h3 {
 p {
   font-size: 14px;
   line-height: 150%;
+}
+
+footer {
+  background-color: #0D0D0D;
+  color: #fff;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

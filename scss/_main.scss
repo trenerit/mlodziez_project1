@@ -1,9 +1,14 @@
 section {
     padding-top: 40px;
-    height: 100vh;
+    min-height: 100vh;
+    // overflow: hidden;
     
     &:nth-of-type(even) {
         background-color: lightgrey;
+    }
+    
+    &:nth-of-type(2) {
+        text-align: center;
     }
 }
 
